@@ -25,15 +25,7 @@ while True:
                     myfile.write(redirect+"\t"+x+"\n")
 
     else:
-        #flag = False
-        with open(actual_host_content, "r") as host_content :
-            host_contains = host_content.read()
-
-        with open(host_path, 'w') as file:
-            file.write(host_contains)
-        print("Fun Hours")
-
-    time.sleep(60 * 5)
+        time.sleep(60 * 5)
 
 
 
