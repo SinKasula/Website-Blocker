@@ -1,6 +1,5 @@
 import time
 host_path = r"C:\Windows\System32\drivers\etc\hosts" #can be different for os other than windows
-actual_host_content = r"G:\practice\Personal\website_blocker\hoststect.txt"
 redirect = "127.0.0.1"
 websites = ["www.facebook.com" , "facebook.com" , "www.wattpad.com", "www.amazon.com", "www.amazon.in"]
 weekdays = [0, 1, 2, 3, 4]
@@ -25,13 +24,7 @@ while True:
                     myfile.write(redirect+"\t"+x+"\n")
 
     else:
-        with open(actual_host_content, "r") as host_content :
-            host_contains = host_content.read()
-
-        with open(host_path, 'w') as file:
-            file.write(host_contains)
-
-    time.sleep(60 * 5)
+        time.sleep(60 * 5)
 
 
 
